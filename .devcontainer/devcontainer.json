@@ -1,0 +1,29 @@
+{
+    "name": "Rails Lab Dev Container",
+    "image": "ruby:4.0.2",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        },
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "postCreateCommand": "apt-get update && apt-get install -y build-essential libsqlite3-dev sqlite3 libyaml-dev pkg-config libvips curl && gem install bundler rails && bundle install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Shopify.ruby-lsp",
+                "castwide.solargraph",
+                "rebornix.Ruby",
+                "GitHub.vscode-pull-request-github",
+                "openai.chatgpt"
+            ]
+        }
+    },
+    "forwardPorts": [3000],
+    "portsAttributes": {
+        "3000": {
+            "label": "Rails Server",
+            "onAutoForward": "notify"
+        }
+    }
+}
