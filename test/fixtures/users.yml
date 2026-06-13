@@ -1,13 +1,13 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  name: MyString
-  dob: 2026-06-13
-  email: MyString
-  phone_number: MyString
+  name: First User
+  dob: 2000-01-01
+  email: first@example.com
+  phone_number: "01000000001"
+  address: Mansoura
 
 two:
-  name: MyString
-  dob: 2026-06-13
-  email: MyString
-  phone_number: MyString
+  name: Second User
+  dob: 2001-01-01
+  email: second@example.com
+  phone_number: "01000000002"
+  address: Cairo
