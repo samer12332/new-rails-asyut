@@ -15,8 +15,15 @@
                 "castwide.solargraph",
                 "rebornix.Ruby",
                 "GitHub.vscode-pull-request-github",
-                "openai.chatgpt"
-            ]
+                "openai.chatgpt",
+                "eamodio.gitlens"
+            ],
+            "settings": {
+                "git.autorefresh": true,
+                "git.decorations.enabled": true,
+                "explorer.decorations.colors": true,
+                "explorer.decorations.badges": true
+            }
         }
     },
     "forwardPorts": [3000],
