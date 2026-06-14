@@ -1,0 +1,25 @@
+﻿{
+  "name": "Rails Lab 4",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/workspaces/new-rails-asyut",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Shopify.ruby-lsp",
+        "castwide.solargraph",
+        "rebornix.Ruby",
+        "GitHub.vscode-pull-request-github",
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker",
+        "openai.chatgpt"
+      ],
+      "settings": {
+        "git.autorefresh": true,
+        "git.decorations.enabled": true,
+        "explorer.decorations.colors": true,
+        "explorer.decorations.badges": true
+      }
+    }
+  }
+}
