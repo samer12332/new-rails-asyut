@@ -2,47 +2,58 @@ require "test_helper"
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @User = Users(:one)
+    @user = users(:one)
   end
 
   test "should get index" do
-    get Users_url
+    get users_url
     assert_response :success
   end
 
   test "should get new" do
-    get new_User_url
+    get new_user_url
     assert_response :success
   end
 
-  test "should create User" do
+  test "should create user" do
     assert_difference("User.count") do
-      post Users_url, params: { User: { email: @User.email, name: @User.name } }
+      post users_url, params: {
+        user: {
+          name: "New User",
+          email: "new_user@example.com"
+        }
+      }
     end
 
-    assert_redirected_to User_url(User.last)
+    assert_redirected_to user_url(User.last)
   end
 
-  test "should show User" do
-    get User_url(@User)
+  test "should show user" do
+    get user_url(@user)
     assert_response :success
   end
 
   test "should get edit" do
-    get edit_User_url(@User)
+    get edit_user_url(@user)
     assert_response :success
   end
 
-  test "should update User" do
-    patch User_url(@User), params: { User: { email: @User.email, name: @User.name } }
-    assert_redirected_to User_url(@User)
+  test "should update user" do
+    patch user_url(@user), params: {
+      user: {
+        name: "Updated User",
+        email: "updated_user@example.com"
+      }
+    }
+
+    assert_redirected_to user_url(@user)
   end
 
-  test "should destroy User" do
+  test "should destroy user" do
     assert_difference("User.count", -1) do
-      delete User_url(@User)
+      delete user_url(@user)
     end
 
-    assert_redirected_to Users_url
+    assert_redirected_to users_url
   end
 end
