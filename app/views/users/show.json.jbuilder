@@ -1,1 +1,1 @@
-json.partial! "Creators/Creator", Creator: @Creator
+json.partial! "Users/User", User: @User

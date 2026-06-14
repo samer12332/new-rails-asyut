@@ -1,16 +1,16 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Creators" %>
+<% content_for :title, "Users" %>
 
-<h1>Creators</h1>
+<h1>Users</h1>
 
-<div id="Creators">
-  <% @Creators.each do |Creator| %>
-    <%= render Creator %>
+<div id="Users">
+  <% @Users.each do |User| %>
+    <%= render User %>
     <p>
-      <%= link_to "Show this Creator", Creator %>
+      <%= link_to "Show this User", User %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New Creator", new_Creator_path %>
+<%= link_to "New User", new_User_path %>

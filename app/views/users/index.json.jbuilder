@@ -1,1 +1,1 @@
-json.array! @Creators, partial: "Creators/Creator", as: :Creator
+json.array! @Users, partial: "Users/User", as: :User
