@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Creators" %>
+
+<h1>Creators</h1>
+
+<div id="Creators">
+  <% @Creators.each do |Creator| %>
+    <%= render Creator %>
+    <p>
+      <%= link_to "Show this Creator", Creator %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New Creator", new_Creator_path %>

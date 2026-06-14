@@ -1,0 +1,6 @@
+﻿class User < ApplicationRecord
+  has_many :posts, foreign_key: :creator_id, inverse_of: :creator, dependent: :destroy
+
+  validates :name, :email, presence: true
+  validates :email, uniqueness: true
+end

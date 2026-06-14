@@ -1,0 +1,12 @@
+<% content_for :title, "Editing Creator" %>
+
+<h1>Editing Creator</h1>
+
+<%= render "form", Creator: @Creator %>
+
+<br>
+
+<div>
+  <%= link_to "Show this Creator", @Creator %> |
+  <%= link_to "Back to Creators", Creators_path %>
+</div>

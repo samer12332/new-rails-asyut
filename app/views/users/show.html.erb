@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @Creator %>
+
+<div>
+  <%= link_to "Edit this Creator", edit_Creator_path(@Creator) %> |
+  <%= link_to "Back to Creators", Creators_path %>
+
+  <%= button_to "Destroy this Creator", @Creator, method: :delete %>
+</div>
